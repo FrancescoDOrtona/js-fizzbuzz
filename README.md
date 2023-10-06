@@ -1,0 +1,15 @@
+# Fizzbuzz 
+- Creo un loop con con For che stampi i numeri da 1 a 100 nella console
+    - dichiarazione for
+    - console.log
+- Per i multipli di 3 stampo Fizz
+    - dichiaro un variabile Fizz
+    - SE Fizz = % 3 === 0 
+    - stampo Fizz
+- Per i multipli di 5 stampo Buzz
+    - dichiaro un variabile Buzz 
+    - SE Buzz = % 5 === 0 
+    - stampo Buzz
+- Per i multipli sia di 3 che di 5 stampo FizzBuzz 
+    - se Fizz and Buzz
+    - stampo FizzBuzz 
