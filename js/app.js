@@ -1,21 +1,34 @@
 //  Creo un loop con con For che stampi i numeri da 1 a 100 nella console
 
-for (let i = 0; i < 100; i++) {
-  let n = i + 1;
+const gridDOMElement = document.querySelector('.grid')
 
-  // 15
+for (let i = 0; i < 100; i++) {
+    let n = i + 1;
+
+    const boxDOMElement = document.createElement('div');
+    boxDOMElement.classList.add('box')
+
   const restoDiv3 = n % 3;
   const restoDiv5 = n % 5;
 
   if (restoDiv3 === 0 && restoDiv5 === 0) { 
+    boxDOMElement.innerHTML = 'FizzBuzz'
     console.log(n, "FizzBuzz");
 
   } else if (restoDiv3 === 0) {
+    boxDOMElement.innerHTML = 'Fizz'
+    boxDOMElement.style.backgroundColor = '#1ABC9C'
     console.log(n, "Fizz");
 
-  } else if (restoDiv5 === 0) {   
+  } else if (restoDiv5 === 0) { 
+    boxDOMElement.innerHTML = 'Buzz'
+    boxDOMElement.style.backgroundColor = '#3A546D'  
     console.log(n, "Buzz");
 
-  } else 
+  } else {
+    boxDOMElement.innerHTML = n
+    boxDOMElement.style.backgroundColor = '#FF8F00'
     console.log(n)
+  }
+    gridDOMElement.append(boxDOMElement)
 }
