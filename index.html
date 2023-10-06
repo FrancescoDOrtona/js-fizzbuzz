@@ -6,6 +6,11 @@
     <title>Document</title>
 </head>
 <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     body{
         background-color: #141922;
     }
@@ -13,19 +18,20 @@
     .container{
         max-width: 900px;
         margin: 0 auto;
-        padding: 30px 0px;
+        padding: 15px 0px;
+        height: 100vh;
     }
     .grid {
         display: grid;
         gap: 10px;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
 	}
 
 	.box {
         background-color: yellowgreen;
         border-radius: 10px;
         color: white;
-        font-size: 20px;
+        font-size: 15px;
         font-weight: bold;
         aspect-ratio: 1;
         display: flex;
