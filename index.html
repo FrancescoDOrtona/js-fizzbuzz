@@ -5,8 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    body{
+        background-color: #141922;
+    }
+
+    .container{
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .grid {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(7, 1fr);
+	}
+
+	.box {
+        background-color: yellowgreen;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        aspect-ratio: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
 <body>
-    
+    <div class="container">
+        <div class="grid">
+            
+        </div>
+    </div>
 
     <script src="./js/app.js"></script>
 </body>
