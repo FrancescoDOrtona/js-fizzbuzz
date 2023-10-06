@@ -8,19 +8,16 @@ for (let i = 0; i < 100; i++) {
     const boxDOMElement = document.createElement('div');
     boxDOMElement.classList.add('box')
 
-  const restoDiv3 = n % 3;
-  const restoDiv5 = n % 5;
-
-  if (restoDiv3 === 0 && restoDiv5 === 0) { 
+  if (n % 3 === 0 && n % 5 === 0) { 
     boxDOMElement.innerHTML = 'FizzBuzz'
     console.log(n, "FizzBuzz");
 
-  } else if (restoDiv3 === 0) {
+  } else if (n % 3 === 0) {
     boxDOMElement.innerHTML = 'Fizz'
     boxDOMElement.style.backgroundColor = '#1ABC9C'
     console.log(n, "Fizz");
 
-  } else if (restoDiv5 === 0) { 
+  } else if (n % 5 === 0) { 
     boxDOMElement.innerHTML = 'Buzz'
     boxDOMElement.style.backgroundColor = '#3A546D'  
     console.log(n, "Buzz");
