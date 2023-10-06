@@ -4,15 +4,15 @@ for(let i = 0; i < 100; i++) {
     let n = i + 1
     
 
-    const fizz = n % 3
-    const buzz = n % 5
+    const restoDiv3 = n % 3
+    const restoDiv5 = n % 5
 
-    if (fizz === 0){
-        console.log(n,'Fizz', fizz)
-    } else if (buzz === 0){
-        console.log(n,'Buzz', buzz)
+    if (restoDiv3 === 0){
+        console.log(n,'Fizz')
+    } else if (restoDiv5 === 0){
+        console.log(n,'Buzz')
     }
-     if (fizz === 0 && buzz === 0) {
+     if (restoDiv3 === 0 && restoDiv5 === 0) {
         console.log(n,'FizzBuzz')
     }
 
