@@ -9,10 +9,11 @@ for(let i = 0; i < 100; i++) {
 
     if (restoDiv3 === 0){
         console.log(n,'Fizz')
-    } else if (restoDiv5 === 0){
+    }
+    if (restoDiv5 === 0){
         console.log(n,'Buzz')
     }
-     if (restoDiv3 === 0 && restoDiv5 === 0) {
+    if (restoDiv3 === 0 && restoDiv5 === 0) {
         console.log(n,'FizzBuzz')
     }
 
